@@ -62,7 +62,7 @@ public class TableUtilitiesTest {
                 " 18 | 36 | 54 | 72 | 90 |108 |126 |144 |162 |180 |198 |216 |234 |252 |270 |288 |306 |324 |342 |360 |\n" +
                 " 19 | 38 | 57 | 76 | 95 |114 |133 |152 |171 |190 |209 |228 |247 |266 |285 |304 |323 |342 |361 |380 |\n" +
                 " 20 | 40 | 60 | 80 |100 |120 |140 |160 |180 |200 |220 |240 |260 |280 |300 |320 |340 |360 |380 |400 |\n";
-        String actual = TableUtilities.getMultiplicationTable(20);
+        String actual = TableUtilities.getMultiplicationTable(1, 20, 1, 20);
         Assert.assertEquals(expected, actual);
     }
 
