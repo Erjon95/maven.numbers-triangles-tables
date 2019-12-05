@@ -3,7 +3,19 @@ package com.github.perschola;
 public class TriangleUtilities {
 
     public static String getTriangle(int numberOfRows) {
-        return null;
+
+        StringBuilder result = new StringBuilder();
+
+        for (int i = 1; i <= numberOfRows; i++) {
+            if (i > 1)
+                result.append("\n");
+            for (int j = 1; j <= i; j++)
+                result.append("*");
+        }
+
+        result.append("\n");
+
+        return result.toString();
     }
 
     public static String getRow(int numberOfStars) {
@@ -15,10 +27,10 @@ public class TriangleUtilities {
     }
 
     public static String getSmallTriangle() {
-        return null;
+        return getTriangle(4);
     }
 
     public static String getLargeTriangle() {
-        return null;
+        return getTriangle(10);
     }
 }
